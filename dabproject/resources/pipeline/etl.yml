@@ -1,0 +1,12 @@
+resources:
+  pipelines:
+    pipeline_ewsr:
+      name: ewsr
+      libraries:
+        - glob:
+            include: ../../src/etlpipline/ewsr/transformations/**
+      schema: default
+      photon: true
+      catalog: e2e
+      serverless: true
+      root_path: ../../src/etlpipline/ewsr
